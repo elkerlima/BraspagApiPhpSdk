@@ -488,6 +488,17 @@ class Payment implements \JsonSerializable
         return $this;
     }
 
+    public function getReasonMessage()
+    {
+        return $this->reasonMessage;
+    }
+
+    public function setReasonMessage($reasonMessage)
+    {
+        $this->reasonMessage = $reasonMessage;
+        return $this;
+    }
+
     public function getProviderReturnCode()
     {
         return $this->providerReturnCode;
@@ -501,12 +512,12 @@ class Payment implements \JsonSerializable
 
     public function getProviderReturnMessage()
     {
-        return $this->providerReturnCode;
+        return $this->providerReturnMessage;
     }
 
-    public function setProviderReturnMessage($providerReturnCode)
+    public function setProviderReturnMessage($providerReturnMessage)
     {
-        $this->providerReturnCode = $providerReturnCode;
+        $this->providerReturnMessage = $providerReturnMessage;
         return $this;
     }
 
